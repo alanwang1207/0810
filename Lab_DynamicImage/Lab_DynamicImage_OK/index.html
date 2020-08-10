@@ -37,8 +37,44 @@ function setImage()
 	// 設定秒數
 	setTimeout(setImage, 3000);
 }
+function setImage()
+{
+	var img = new Array();
+	var url = new Array();
+	img[0] = "images/chc.gif";	url[0] = "http://chicago.cubs.mlb.com/";
+	img[1] = "images/oak.gif";	url[1] = "http://oakland.athletics.mlb.com/";
+	img[2] = "images/sd.gif";	url[2] = "http://sandiego.padres.mlb.com/";
+	img[3] = "images/was.gif";	url[3] = "http://washington.nationals.mlb.com/";
+	
+	iImage += 1;
+	if (iImage == iImage)
+		iImage +1 ;
+	document.getElementById("imgs").src = img[iImage %4];
+	document.getElementById("imgshref").href = url[iImage%4];
+	// 設定秒數
+	setTimeout(setImage, 3000);
+}
 
 </script>
 
 </body>
 </html>
+
+
+function setImage()
+{
+	var img = new Array();
+	var url = new Array();
+	img[0] = "images/chc.gif";	url[0] = "http://chicago.cubs.mlb.com/";
+	img[1] = "images/oak.gif";	url[1] = "http://oakland.athletics.mlb.com/";
+	img[2] = "images/sd.gif";	url[2] = "http://sandiego.padres.mlb.com/";
+	img[3] = "images/was.gif";	url[3] = "http://washington.nationals.mlb.com/";
+	
+	iImage += 1;
+	if (iImage == iImage)
+		iImage +1 ;
+	document.getElementById("imgs").src = img[iImage %4];
+	document.getElementById("imgshref").href = url[iImage%4];
+	// 設定秒數
+	setTimeout(setImage, 3000);
+}

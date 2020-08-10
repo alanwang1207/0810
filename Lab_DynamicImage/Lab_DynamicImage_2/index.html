@@ -15,11 +15,13 @@
 <p>...</p>
 
 <script type="text/javascript">
+var temp = 0;
 
 setImage();
 
 function setImage()
 {
+	
 	var img = new Array();
 	var url = new Array();
 	img[0] = "images/chc.gif";	url[0] = "http://chicago.cubs.mlb.com/";
@@ -27,13 +29,20 @@ function setImage()
 	img[2] = "images/sd.gif";	url[2] = "http://sandiego.padres.mlb.com/";
 	img[3] = "images/was.gif";	url[3] = "http://washington.nationals.mlb.com/";
 	
+	
+
 	var iImage = Math.floor(Math.random() * img.length);
-	document.getElementById("imgs").src = img[iImage];
-	document.getElementById("imgshref").href = url[iImage];
+	if (iImage == temp){
+		iImage ++;
+	}
+		
+	document.getElementById("imgs").src = img[iImage % 4];
+	document.getElementById("imgshref").href = url[iImage % 4];
 	// setTimeout (setImage,500);
+	temp = iImage;
 }
 
-setInterval("setImage()",100);
+setInterval("setImage()",1000);
 </script>
 
 </body>
