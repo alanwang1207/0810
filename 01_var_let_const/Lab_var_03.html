@@ -40,15 +40,15 @@
 
 <script>
 
-var x = 100;
+var x = 110;
 
 $(document).ready(function () {
     var y = 200; // TODO: y no var
 
     $("#okButton").on('click', function () {
-        var x = 300;  // TODO: x no var
+         x = 300;  // TODO: x no var
 
-        report.innerHTML = `
+         report.innerHTML = `
             x = ${x}<br>
             window.x = ${window.x}<br>
             window.y = ${window.y}<br>

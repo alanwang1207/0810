@@ -1,0 +1,81 @@
+<html>
+    <body>
+        <script>
+            function show(count){
+                let star = "";
+                if (count<0){
+                    alert("請輸入正數");
+                }
+                for(let i=0; i <count ; i++){
+                    if(i == 4) continue;
+                    if(i == 21) break;
+                    star += "*";
+                    
+                }
+                alert(star);
+            }
+
+            function getRandom(x){
+                return Math.floor(Math.random()*x);
+            };
+            show(getRandom(22));
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <script>
+            function show(count){
+                let star = "";
+                if (count>= 1){
+                    for(let i=0; i <count ; i++){
+                    if(i == 4) continue;
+                    if(i == 21) break;
+                    star += "*";
+                }
+                    
+                }
+                else{
+                    alert("請輸入正數");
+                }
+                
+                alert(star);
+            }
+// 亂數產生器
+            function getRandom(x){
+                return Math.floor(Math.random()*x);
+            };
+            show(getRandom(22));
+        </script>
+    </body>
+</html>
+
+
+<html>
+    <body>
+        <script>
+            function show(count){
+                let star = "";
+                if (count < 0){
+                    alert("請輸入正數");
+                    return;
+                }
+                if (count >=21){
+                    alert("請輸入正數");
+                    return;
+                }
+                for(let i=0; i <count ; i++){
+                    star += "*";
+                }
+                alert(star);
+            }
+// 亂數產生器
+            function getRandom(x){
+                return Math.floor(Math.random()*x);
+            };
+            show(getRandom(22));
+        </script>
+    </body>
+</html>
