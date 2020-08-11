@@ -99,6 +99,31 @@ class CDog extends CAnimal {
 let obj = new CDog(3);
 obj.makeSound();
 
+class animal{
+    constructor(weightvalue = 1){
+        this._weight = 0;
+        this.weight = weightvalue;
+    }
+    get weight(){
+        return this._weight;
+    }
+    set weight(weightValue){
+        if(weightValue > 0){
+            this._weight = weightValue;
+        }
+    }
+    makeSound(){
+        alert("animal: ...");
+    }
+}
+class dog extends animal{
+    makeSound(){
+        alert("dog barking!");
+    }
+}
+let obj = new dog(3);
+obj.makeSound();
+
 
 
 

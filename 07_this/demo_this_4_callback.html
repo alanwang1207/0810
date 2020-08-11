@@ -24,23 +24,21 @@
         const obj = new Creature();
         obj.makeSound();
 
-
-        // class Creature {
-        //     constructor(weightValue = 1) {
-        //         this.name = "cicada";
-        //     }
-        //     makeSound() {
-        //         console.log(this.name);
-        //         const _this = this;
-        //         setTimeout(function () {
-        //             console.log(_this.name);
-        //         }, 1000)
-        //     }
-        // }
-        // const obj = new Creature();
-        // obj.makeSound();
-
-
+        class creature{
+            constructor(weightValue = 1){
+                this.name = "cicada";
+            }
+            makesound(){
+                console.log(this.name);
+                const _this = this;
+                setTimeout(function(){
+                    console.log(_this.name);
+                }, 1000)
+            }
+        }
+        const obj = new creature();
+        obj.makesound();
+        
         // class Creature {
         //     constructor(weightValue = 1) {
         //         this.name = "cicada";
@@ -54,7 +52,7 @@
         // }
         // const obj = new Creature();
         // obj.makeSound();
-
+// 箭頭函示永遠都是文本的父階
 
     </script>
 

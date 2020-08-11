@@ -22,10 +22,10 @@ test.onclick = function () {
     // 數字 2 是最大的，
     // 下列程式該怎麼修改呢?
     
-    var data = [3, 0, 1, 8, 7, 2, 5, 4, 9, 6];
-    
+    var data = [3, 1, 0, 8, 7, 2, 5, 4, 9, 6];
+
     // 你的任務程式:
-    data.sort();
+    //data.sort();
 
     data.sort(function (x, y) {
         console.log(x, y);
@@ -40,6 +40,9 @@ test.onclick = function () {
     report.innerText = data.toString();
 
 }  // end of test.onclick
+// compareFunction(a, b) 回傳值如果小於 0 (負數)，表示 a 排序在 b 前面
+// compareFunction(a, b) 回傳值如果等於 0，表示 a 和 b 排序一樣位置不動
+// compareFunction(a, b) 回傳值如果大於 0 (正數)，表示 b 排序在 a 前面
 
 </script>
 

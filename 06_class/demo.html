@@ -21,23 +21,93 @@
         // obj.makeSound();
 
 
-        class animal {
-            weight = 100;
-            height = 550;
-            makesound(weight,height){
-                weight = prompt("走幾步")
-                height =
-                alert("animal:weight :"+ this.weight );
-                alert("animal:height :"+ this.height );
+        // class animal {
+        //     weight = 100;
+        //     height = 550;
+        //     makesound(weight,height){
+        //         weight = prompt("走幾步")
+        //         height =
+        //         alert("animal:weight :"+ this.weight );
+        //         alert("animal:height :"+ this.height );
+        //     }
+        //     walk(step){
+        //         step = prompt("走幾步")
+        //         alert("animalwalk:"+ step);
+        //     }
+        // }
+        // let obj = new animal();
+        // obj.makesound();
+        // obj.walk();
+
+
+            // class CAnimal {
+            //     constructor(weightValue = 1) {
+            //         this._weight = 0;
+            //         this.weight = weightValue;
+            //     }
+            //     get weight() {
+            //         return this._weight;
+            //     }
+            //     set weight(weightValue) {
+            //         if (weightValue > 0) {
+            //             this._weight = weightValue;
+            //         }
+            //     }
+            //     makeSound() {
+            //         alert("Animal: ...");
+            //     }
+            // }
+            // class CDog extends CAnimal {
+            //     constructor(location = "Earth", weightValue) {
+            //         super(weightValue);
+            //         this.location = location;
+            //     }
+            //     makeSound() {
+            //         // super.makeSound();
+            //         alert("Dog barking!");
+            //     }
+            // }
+            // // let obj = new CDog(null, 3);
+            // let obj = new CDog(undefined, 3);
+            // alert(obj.weight);
+            // alert(obj.location);
+
+            class animal{
+                constructor(weightValue = 1){
+                    alert("constructor");
+                    this._weight = 0;
+                    alert("this._weight");
+                    this.weight = weightValue;
+                    alert("this.weight");
+                }
+                get weight(){
+                    alert("get weight");
+                    return this._weight;
+                }
+                set weight(weightValue){
+                    alert("set weight");
+                    if(weightValue > 0){
+                        this._weight = weightValue;
+                    alert("if(weightValue > 0)");
+                    }
+                    
+                }
+                makesound(){
+                    alert("animal");
+                }
             }
-            walk(step){
-                step = prompt("走幾步")
-                alert("animalwalk:"+ step);
+            class dog extends animal{
+                constructor(location = "earth", weightValue){
+                    super(weightValue);
+                    this.location = location;
+                }
+                makesound(){
+                    alert("dog");
+                }
             }
-        }
-        let obj = new animal();
-        obj.makesound();
-        obj.walk();
+            let obj = new dog(undefined, 0);
+            alert(obj.weight);
+            alert(obj.location);
 
     </script>
 
