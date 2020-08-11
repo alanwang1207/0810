@@ -72,7 +72,8 @@
 // 140	JSON （將JSON 格式的字串轉換成記憶體資料）
 // 請閱讀  s 字串的內容與格式
 // JSON.stringify() 與 JSON.parse() 的功能是什麼?
-
+物件序列化
+json囀成物件
 <script>
 
 	var s = '[{"firstName":"Derek","lastName":"Jeter"},{"firstName":"Jeremy","lastName":"Lin"},{"firstName":"Lionel","lastName":"Messi"}]';
