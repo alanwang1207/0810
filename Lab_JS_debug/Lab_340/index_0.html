@@ -40,10 +40,10 @@
         
         for (i = 1; i <= upperValue; i++) {
             result = result + i;
-            // console.log("i = " + i + " result = " + result);
-            // console.assert(
-            //     result != 45, 
-            //     "when i = " + i + ", we got wrong value.");
+            console.log("i = " + i + " result = " + result);
+            console.assert(
+                result != 45, 
+                "when i = " + i + ", we got wrong value.");
         }
 
         return result;
@@ -51,12 +51,12 @@
     
     var n = 10;
     
-    // debugger;
+    debugger;
     
     var report = "1 + 2 + 3 + ... + 10 = " + sum1ToN(n);
     
     document.getElementById("report").innerHTML = report;
-    // report.innerHTML = report;
+    report.innerHTML = report;
 
     </script>
 

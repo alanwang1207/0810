@@ -14,7 +14,7 @@ function sad(data, timeCount) {
     })
 }
 
-
+// 都先承諾然後再開始等
 async function living() {
     var promise1 = happy(200, 2000);
     var promise2 = sad(-100, 3000);

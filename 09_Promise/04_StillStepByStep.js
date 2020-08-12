@@ -14,7 +14,7 @@ function sad(data, timeCount) {
     })
 }
 
-
+// 把await的等待結果傳到result 等承諾後才印出來 total 執行時間５秒
 async function living() {
     var total = 0;
     var result1 = await happy(200, 2000);
